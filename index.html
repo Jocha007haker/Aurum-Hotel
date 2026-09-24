@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Aurum Hotel Boutique — Lujo íntimo en el corazón de la ciudad. Reserva tu estancia perfecta."/>
+  <title>Aurum Hotel Boutique — Experiencia de Lujo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo">✦ AURUM</a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#inicio" class="nav__link">Inicio</a></li>
+        <li><a href="#habitaciones" class="nav__link">Habitaciones</a></li>
+        <li><a href="#amenidades" class="nav__link">Amenidades</a></li>
+        <li><a href="#galeria" class="nav__link">Galería</a></li>
+        <li><a href="#reservar" class="nav__link">Reservar</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="tel:+15559876543" class="nav__phone"><i class="fa-solid fa-phone"></i> Llamar</a>
+        <a href="#reservar" class="btn btn--gold">Reservar ahora</a>
+        <button class="nav__toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow">Hotel Boutique · 5 Estrellas</p>
+      <h1>Donde el lujo <br/><em>encuentra la calma</em></h1>
+      <p>32 habitaciones únicas diseñadas para los viajeros más exigentes. En el corazón de la ciudad, lejos del ruido del mundo.</p>
+      <a href="#reservar" class="btn btn--gold btn--lg">Reservar mi estancia</a>
+      <div class="hero__awards">
+        <span><i class="fa-solid fa-award"></i> Traveler's Choice 2025</span>
+        <span><i class="fa-solid fa-star"></i> 5 estrellas Forbes</span>
+        <span><i class="fa-solid fa-leaf"></i> Certificado Green Key</span>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator"></div>
+  </section>
+
+  <!-- QUICK BOOKING BAR -->
+  <div class="quick-book">
+    <div class="container quick-book__inner">
+      <div class="qb-field">
+        <label>Check-in</label>
+        <input type="date" id="checkin"/>
+      </div>
+      <div class="qb-divider"></div>
+      <div class="qb-field">
+        <label>Check-out</label>
+        <input type="date" id="checkout"/>
+      </div>
+      <div class="qb-divider"></div>
+      <div class="qb-field">
+        <label>Huéspedes</label>
+        <select>
+          <option>1 adulto</option>
+          <option>2 adultos</option>
+          <option>2 adultos, 1 niño</option>
+          <option>2 adultos, 2 niños</option>
+        </select>
+      </div>
+      <div class="qb-divider"></div>
+      <div class="qb-field">
+        <label>Habitación</label>
+        <select>
+          <option>Cualquier tipo</option>
+          <option>Deluxe</option>
+          <option>Junior Suite</option>
+          <option>Suite Presidencial</option>
+        </select>
+      </div>
+      <button class="btn btn--gold" onclick="document.getElementById('reservar').scrollIntoView({behavior:'smooth'})">
+        Verificar disponibilidad
+      </button>
+    </div>
+  </div>
+
+  <!-- HABITACIONES -->
+  <section class="section" id="habitaciones">
+    <div class="container">
+      <div class="section__header">
+        <span class="tag">Habitaciones & Suites</span>
+        <h2>Un refugio <em>para cada viajero</em></h2>
+        <p>Cada habitación es un mundo en sí misma. Diseñadas por arquitectos de interiores de renombre internacional.</p>
+      </div>
+      <div class="rooms__grid">
+        <div class="room-card room-card--featured">
+          <div class="room-card__img" style="background:linear-gradient(135deg,#1a1208,#4a3418)">
+            <div class="room-card__img-inner">🛏️</div>
+            <span class="room-card__category">Suite Presidencial</span>
+          </div>
+          <div class="room-card__body">
+            <h3>La Suite Aurum</h3>
+            <p>180 m² de opulencia absoluta. Terraza privada con vista panorámica, bañera exenta y comedor privado.</p>
+            <div class="room-card__amenities">
+              <span><i class="fa-solid fa-expand"></i> 180 m²</span>
+              <span><i class="fa-solid fa-bed"></i> King bed</span>
+              <span><i class="fa-solid fa-eye"></i> Vista ciudad</span>
+              <span><i class="fa-solid fa-utensils"></i> Desayuno incluido</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-price">$850<span>/noche</span></div>
+              <a href="#reservar" class="btn btn--gold btn--sm">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-card__img" style="background:linear-gradient(135deg,#0f2027,#203a43)">
+            <div class="room-card__img-inner">🌅</div>
+            <span class="room-card__category">Junior Suite</span>
+          </div>
+          <div class="room-card__body">
+            <h3>Junior Suite Marina</h3>
+            <p>85 m² con sala de estar separada, balcón privado y bañera de hidromasaje.</p>
+            <div class="room-card__amenities">
+              <span><i class="fa-solid fa-expand"></i> 85 m²</span>
+              <span><i class="fa-solid fa-bed"></i> King bed</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-price">$420<span>/noche</span></div>
+              <a href="#reservar" class="btn btn--gold btn--sm">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-card__img" style="background:linear-gradient(135deg,#2d1b69,#5b4fcf)">
+            <div class="room-card__img-inner">🌙</div>
+            <span class="room-card__category">Deluxe</span>
+          </div>
+          <div class="room-card__body">
+            <h3>Habitación Deluxe</h3>
+            <p>45 m² de elegancia refinada. Perfecta para el viajero de negocios o escapada romántica.</p>
+            <div class="room-card__amenities">
+              <span><i class="fa-solid fa-expand"></i> 45 m²</span>
+              <span><i class="fa-solid fa-bed"></i> Queen bed</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-price">$280<span>/noche</span></div>
+              <a href="#reservar" class="btn btn--gold btn--sm">Reservar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENIDADES -->
+  <section class="section amenidades" id="amenidades">
+    <div class="container">
+      <div class="section__header">
+        <span class="tag">Amenidades</span>
+        <h2>Todo lo que necesitas, <em>y más</em></h2>
+      </div>
+      <div class="amenidades__grid">
+        <div class="am-card"><i class="fa-solid fa-spa"></i><h3>Spa & Wellness</h3><p>Tratamientos de lujo, masajes y sauna finlandesa. Tu bienestar, nuestra prioridad.</p></div>
+        <div class="am-card"><i class="fa-solid fa-champagne-glasses"></i><h3>Restaurante Gourmand</h3><p>Cocina de autor con ingredientes de temporada y bodega con más de 300 etiquetas.</p></div>
+        <div class="am-card"><i class="fa-solid fa-water-ladder"></i><h3>Alberca infinity</h3><p>Alberca climatizada en la azotea con vista panorámica a 360°. Abierta todo el año.</p></div>
+        <div class="am-card"><i class="fa-solid fa-dumbbell"></i><h3>Fitness Center</h3><p>Equipos Technogym de última generación. Entrenador personal disponible bajo reserva.</p></div>
+        <div class="am-card"><i class="fa-solid fa-wifi"></i><h3>Business Center</h3><p>WiFi simétrico 1 Gbps, salas de reuniones privadas y servicio de secretariado.</p></div>
+        <div class="am-card"><i class="fa-solid fa-car"></i><h3>Concierge & Transfer</h3><p>Servicio de concierge 24/7, traslados en vehículo de lujo y estacionamiento seguro.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section galeria" id="galeria">
+    <div class="container">
+      <div class="section__header">
+        <span class="tag">Galería</span>
+        <h2>Una imagen vale <em>más que mil palabras</em></h2>
+      </div>
+    </div>
+    <div class="gallery__mosaic">
+      <div class="gm gm--tall" style="background:linear-gradient(135deg,#1a1208,#4a3418)"><span>🏨</span><p>Lobby principal</p></div>
+      <div class="gm" style="background:linear-gradient(135deg,#0f2027,#203a43)"><span>🛏️</span><p>Suite Presidencial</p></div>
+      <div class="gm" style="background:linear-gradient(135deg,#064e3b,#10b981)"><span>🌿</span><p>Jardín zen</p></div>
+      <div class="gm gm--wide" style="background:linear-gradient(135deg,#2d1b69,#5b4fcf)"><span>🍷</span><p>Restaurante Gourmand</p></div>
+      <div class="gm" style="background:linear-gradient(135deg,#7c2d12,#c2410c)"><span>💆</span><p>Spa & Wellness</p></div>
+      <div class="gm" style="background:linear-gradient(135deg,#0c4a6e,#0ea5e9)"><span>🏊</span><p>Alberca infinity</p></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section reviews">
+    <div class="container">
+      <div class="section__header">
+        <span class="tag">Reseñas</span>
+        <h2>Lo que dicen nuestros <em>huéspedes</em></h2>
+      </div>
+      <div class="reviews__grid">
+        <div class="review">
+          <div class="review__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"La experiencia más extraordinaria que he tenido en un hotel. El personal anticipa cada necesidad antes de que la expreses. Volveremos sin duda."</p>
+          <div class="review__author"><span class="review__avatar">JM</span><div><strong>James Morrison</strong><em>Nueva York, EE.UU.</em></div></div>
+        </div>
+        <div class="review">
+          <div class="review__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Celebramos nuestro aniversario aquí y fue mágico. La Suite Aurum es simplemente impresionante. El spa es de otro nivel."</p>
+          <div class="review__author"><span class="review__avatar" style="background:#10b981">SC</span><div><strong>Sophie & Claude</strong><em>París, Francia</em></div></div>
+        </div>
+        <div class="review">
+          <div class="review__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"El restaurante es una joya. Chef con estrella Michelin y una bodega impresionante. Vine por negocios y me fui enamorado del lugar."</p>
+          <div class="review__author"><span class="review__avatar" style="background:#7c3aed">HT</span><div><strong>Hiroshi Tanaka</strong><em>Tokio, Japón</em></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAR -->
+  <section class="section reservar-section" id="reservar">
+    <div class="container">
+      <div class="reservar__wrapper">
+        <div class="reservar__info">
+          <span class="tag">Reservaciones</span>
+          <h2>Garantiza tu <em>estancia perfecta</em></h2>
+          <p>Reserva directamente con nosotros y obtén la mejor tarifa garantizada, más beneficios exclusivos.</p>
+          <div class="reservar__perks">
+            <div><i class="fa-solid fa-tag"></i> Mejor precio garantizado</div>
+            <div><i class="fa-solid fa-clock"></i> Check-in/out flexible</div>
+            <div><i class="fa-solid fa-mug-hot"></i> Desayuno incluido</div>
+            <div><i class="fa-solid fa-ban"></i> Cancelación gratuita 48h</div>
+          </div>
+          <div class="reservar__contact">
+            <a href="tel:+15559876543"><i class="fa-solid fa-phone"></i> +1 (555) 987-6543</a>
+            <a href="mailto:reservas@aurumhotel.com"><i class="fa-solid fa-envelope"></i> reservas@aurumhotel.com</a>
+          </div>
+        </div>
+        <form class="reservar__form" id="hotel-form">
+          <h3>Solicitud de reserva</h3>
+          <div class="form-row">
+            <input type="text" placeholder="Nombre completo" required/>
+            <input type="email" placeholder="Correo electrónico" required/>
+          </div>
+          <div class="form-row">
+            <input type="date" placeholder="Check-in" required/>
+            <input type="date" placeholder="Check-out" required/>
+          </div>
+          <div class="form-row">
+            <select>
+              <option>Tipo de habitación</option>
+              <option>Habitación Deluxe · $280/noche</option>
+              <option>Junior Suite · $420/noche</option>
+              <option>Suite Presidencial · $850/noche</option>
+            </select>
+            <select>
+              <option>Huéspedes</option>
+              <option>1 adulto</option>
+              <option>2 adultos</option>
+              <option>2 adultos + niños</option>
+            </select>
+          </div>
+          <textarea rows="3" placeholder="Peticiones especiales (aniversario, alergias alimentarias, etc.)..."></textarea>
+          <button type="submit" class="btn btn--gold btn--full btn--lg">
+            Confirmar reserva <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <p class="form__note">Sin cargos hasta la confirmación. Cancelación gratuita 48h antes.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer">✦ AURUM</a>
+        <p>Hotel Boutique de 5 estrellas. Lujo íntimo en el corazón de la ciudad.</p>
+        <div class="footer__awards">
+          <span>Traveler's Choice 2025</span>
+          <span>Forbes 5★</span>
+          <span>Green Key</span>
+        </div>
+      </div>
+      <div><h4>Habitaciones</h4><ul><li><a href="#">Habitación Deluxe</a></li><li><a href="#">Junior Suite</a></li><li><a href="#">Suite Presidencial</a></li><li><a href="#">Paquetes especiales</a></li></ul></div>
+      <div><h4>Experiencias</h4><ul><li><a href="#">Spa & Wellness</a></li><li><a href="#">Restaurante Gourmand</a></li><li><a href="#">Eventos privados</a></li><li><a href="#">Tours y actividades</a></li></ul></div>
+      <div><h4>Contacto</h4>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Av. Palmas 500, CDMX</li>
+          <li><i class="fa-solid fa-phone"></i> +1 (555) 987-6543</li>
+          <li><i class="fa-solid fa-envelope"></i> reservas@aurumhotel.com</li>
+          <li><i class="fa-solid fa-clock"></i> Check-in 3pm / Check-out 12pm</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">© 2026 Aurum Hotel Boutique. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const h=document.getElementById('header')
+    window.addEventListener('scroll',()=>h.classList.toggle('scrolled',window.scrollY>80))
+    document.getElementById('nav-toggle').addEventListener('click',()=>document.getElementById('nav-menu').classList.toggle('open'))
+    // Set min date for checkin/checkout
+    const today=new Date().toISOString().split('T')[0]
+    document.getElementById('checkin').min=today
+    document.getElementById('checkout').min=today
+    document.getElementById('hotel-form').addEventListener('submit',e=>{
+      e.preventDefault()
+      e.target.innerHTML='<div class="booking-success"><i class="fa-solid fa-circle-check"></i><h3>¡Reserva recibida!</h3><p>Recibirás la confirmación en tu correo en los próximos minutos. ¡Te esperamos!</p></div>'
+    })
+  </script>
+</body>
+</html>
